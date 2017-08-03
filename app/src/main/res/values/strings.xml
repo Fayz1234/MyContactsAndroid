@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyContacts</string>
+    <string name="cd_image_iv">This ImageView will show User Image</string>
+    <string name="cd_favourite_iv">This ImageView will show favourite contact</string>
+    <string name="cd_header_back">This ImageView will show header back button</string>
+    <string name="cd_edit">This ImageView will show edit icon</string>
+
+    <string name="label_contact">Contacts</string>
+    <string name="label_addContact">Add Contact</string>
+    <string name="label_viewContact">View Contact</string>
+    <string name="label_all">All</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="label_my_contacts">My Contacts</string>
+
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="nickName">Nick Name</string>
+    <string name="email">Email</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="workNumber">Work Contact Number</string>
+    <string name="homeNumber">Home Contact Number</string>
+    <string name="address">Address</string>
+    <string name="skypeName">Skype Name</string>
+    <string name="relationship">Relationship</string>
+    <string name="dateOfBirth">Date of Birth</string>
+    <string name="ishiddenContact">Is hidden contact</string>
+    <string name="dateHint">DD/MM/YYYY</string>
+
+    <string name="nextPhaseLabel">It will be implemented in next phase</string>
+
+    <string name="ok">OK</string>
+
+</resources>

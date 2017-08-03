@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mycontacts.mycontacts.MainActivity">
+
+    <include layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_below="@+id/header"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/tsLarge"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/paddingSmall"
+                android:padding="@dimen/paddingNormal"
+                android:text="@string/label_all"/>
+
+            <View
+                android:id="@+id/viewAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/tsLarge"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/paddingSmall"
+                android:padding="@dimen/paddingNormal"
+                android:text="@string/label_favorite"/>
+
+            <View
+                android:id="@+id/viewFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing"
+                android:background="@color/text_color_light"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_options"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/paddingLarge"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@mipmap/add"/>
+
+</RelativeLayout>

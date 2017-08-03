@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingSmall"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/avatar"
+            android:contentDescription="@string/cd_image_iv"
+            android:background="@drawable/circular_shape"
+            android:layout_margin="@dimen/paddingStandard"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingSmall"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingNormal"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tsStandard"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tsNormal"
+                android:layout_marginTop="@dimen/paddingSmall"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/favorite_background"
+            android:contentDescription="@string/cd_favourite_iv"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/separator"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/colorPrimaryDark" />-->
+
+</LinearLayout>
